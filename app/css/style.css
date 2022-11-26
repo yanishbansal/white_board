@@ -1,0 +1,101 @@
+/* Global */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:checked {
+    text-decoration: none;
+}
+
+:root {
+    --color-white: #fcfeff;
+    --color-gray: #3d3d3d;
+    --border-color: rgb(61, 61, 61, 0.3);
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-size: 100%;
+    line-height: 1.1;
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+    height: -webkit-fill-available;
+    cursor: crosshair;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Utility */
+
+.flex {
+    display: flex;
+}
+.flex-jc-c {
+    justify-content: center;
+}
+.flex-jc-sb {
+    justify-content: space-between;
+}
+.flex-ai-c {
+    align-items: center;
+}
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+
+.app.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(30, 31, 35, 0.5);
+    z-index: 2;
+}
+
+/* App */
+
+.app {
+    display: none;
+}
+
+.message-box {
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    color: #6965db;
+    text-align: center;
+    padding: 1rem;
+}

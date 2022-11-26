@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/media-queries.css" />
+        <title>Real-time virtual whiteboard</title>
+    </head>
+    <body>
+        <div class="app">
+            <div
+                class="hamburger-button-container button-container flex flex-jc-c flex-ai-c"
+            >
+                <img
+                    class="hamburger-button icon"
+                    src="/img/menu-burger.svg"
+                    alt="menu-burger"
+                />
+            </div>
+            <div class="app-name-container">
+                <img
+                    class="pencil-icon icon"
+                    src="/img/pencil.svg"
+                    alt="pencil"
+                />
+                <p>Real-time virtual whiteboard</p>
+            </div>
+            <div
+                class="share-button-container button-container flex flex-jc-c flex-ai-c"
+            >
+                <img
+                    class="share-button icon"
+                    src="/img/share.svg"
+                    alt="share"
+                />
+            </div>
+            <div class="tools-container">
+                <div class="shapes-container flex flex-dir-col">
+                    <p class="tools-container-heading">Shapes</p>
+                    <a class="line" href="#"
+                        ><img
+                            class="tools-icon"
+                            src="/img/line.png"
+                            alt="line"
+                        />Line</a
+                    >
+                    <a class="rectangle" href="#"
+                        ><img
+                            class="tools-icon"
+                            src="/img/rectangle-horizontal.svg"
+                            alt="rectangle-horizontal"
+                        />Rectangle</a
+                    >
+                    <a class="circle" href="#"
+                        ><img
+                            class="tools-icon"
+                            src="/img/circle.svg"
+                            alt="circle"
+                        />Circle</a
+                    >
+                    <a class="fill-color" href="#"
+                        ><input
+                            class="fill-color-checkbox"
+                            type="checkbox"
+                            name="Fill color"
+                            id=""
+                        />Fill color</a
+                    >
+                </div>
+                <div class="options-container flex flex-dir-col">
+                    <p class="tools-container-heading">Options</p>
+                    <a class="pencil" href="#"
+                        ><img
+                            class="tools-icon"
+                            src="/img/pencil-selected.svg"
+                            alt="pencil"
+                        />Pencil</a
+                    >
+                    <a class="eraser" href="#"
+                        ><img
+                            class="tools-icon"
+                            src="/img/eraser.png"
+                            alt="eraser"
+                        />Eraser</a
+                    >
+                    <input
+                        class="thickness-slider"
+                        type="range"
+                        min="2"
+                        max="38"
+                        value="2"
+                    />
+                </div>
+                <div class="colors-container">
+                    <p class="tools-container-heading">Colors</p>
+                    <div class="color-list flex flex-ai-c">
+                        <div class="#3c4043 black color"></div>
+                        <div class="#db4437 red color"></div>
+                        <div class="#689f38 green color"></div>
+                        <div class="#00acc1 blue color"></div>
+                        <div class="#f4b400 yellow color"></div>
+                    </div>
+                </div>
+                <div class="buttons-container flex flex-dir-col flex-ai-c">
+                    <a
+                        class="clear-canvas-button button flex flex-jc-c flex-ai-c"
+                        href="#"
+                        >Clear Canvas</a
+                    >
+                    <a
+                        class="save-as-image-button button flex flex-jc-c flex-ai-c"
+                        href="#"
+                        >Save As Image</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="message-box flex flex-jc-c flex-ai-c">
+            <p>Website currently works only on Desktop view</p>
+        </div>
+        <canvas class="canvas"></canvas>
+        <script
+            src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+            integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+            integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="/js/canvas.js"></script>
+    </body>
+</html>

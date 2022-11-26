@@ -1,0 +1,20 @@
+{
+    "name": "real-time-virtual-whiteboard",
+    "version": "1.0.0",
+    "description": "Real-time virtual whiteboard is a web application used for instant collaboration without signing up.",
+    "main": "app.js",
+    "engines": {
+        "node": "16.17.0",
+        "npm": "8.19.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Abhishek Pandey",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "socket.io": "^4.5.3"
+    }
+}

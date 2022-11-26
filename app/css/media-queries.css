@@ -1,0 +1,262 @@
+/* device width >= 768px */
+
+@media (min-width: 768px) {
+    .message-box {
+        display: none;
+    }
+
+    .app {
+        display: block;
+    }
+
+    .button-container {
+        height: 2rem;
+        width: 2rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.375rem;
+        position: absolute;
+        top: 0.75rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: var(--color-white);
+        box-shadow: 0px 2px 10px rgb(5 0 56 / 8%);
+    }
+
+    .hamburger-button-container {
+        left: 0.75rem;
+    }
+
+    .app-name-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: var(--color-gray);
+        top: 0.75rem;
+        left: calc(50% - 8rem);
+        height: 2rem;
+        width: 16rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.375rem;
+        font-size: 0.9375rem;
+        cursor: default;
+        background-color: var(--color-white);
+        z-index: 1;
+        box-shadow: 0px 2px 10px rgb(5 0 56 / 8%);
+    }
+    .app-name-container > img {
+        margin-right: 0.5rem;
+    }
+    .app-name-container > p {
+        display: inline-block;
+    }
+
+    .share-button-container {
+        right: 0.75rem;
+        background-color: #6965db;
+        border: none;
+    }
+
+    .icon {
+        height: 0.6875rem;
+    }
+
+    .tools-container {
+        width: 13.75rem;
+        display: inline-block;
+        position: absolute;
+        top: 3.125rem;
+        left: 0.75rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.25rem;
+        padding: 1rem;
+        display: none;
+        background-color: var(--color-white);
+        box-shadow: 0px 2px 10px rgb(5 0 56 / 8%);
+        cursor: default;
+    }
+    .tools-container a {
+        margin-bottom: 0.625rem;
+        font-size: 0.875rem;
+    }
+    .tools-container a {
+        color: var(--color-gray);
+    }
+    .tools-container-heading {
+        margin-bottom: 0.625rem;
+        color: #000;
+        font-size: 0.875rem;
+    }
+    .tools-icon {
+        height: 0.75rem;
+        margin-inline: 0.5rem;
+    }
+
+    .shapes-container {
+        margin-bottom: 0.75rem;
+    }
+    .shapes-container .fill-color-checkbox {
+        margin-inline: 0.5rem;
+    }
+
+    .options-container {
+        margin-bottom: 0.75rem;
+    }
+    .options-container > input {
+        margin: 0.5rem;
+        height: 0.5rem;
+    }
+    .options-container .pencil {
+        color: #db4437;
+    }
+
+    .colors-container {
+        margin-bottom: 0.75rem;
+    }
+    .color-list {
+        margin-bottom: 0.5rem;
+    }
+    .color {
+        height: 1.1875rem;
+        width: 1.1875rem;
+        margin: 0.5625rem;
+        border-radius: 50%;
+        border: 1px solid var(--border-color);
+        cursor: pointer;
+    }
+
+    .black {
+        background-color: #3c4043;
+    }
+    .red {
+        background-color: #db4437;
+    }
+    .green {
+        background-color: #689f38;
+    }
+    .blue {
+        background-color: #00acc1;
+    }
+    .yellow {
+        background-color: #f4b400;
+    }
+
+    .button {
+        height: 38px;
+        width: 100%;
+        border: 1.5px solid var(--border-color);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .button.save-as-image-button {
+        border: 0;
+        font-weight: 300;
+        color: var(--color-white);
+        background-color: #3974bb;
+        margin-bottom: 0;
+    }
+
+    .canvas {
+        z-index: 0;
+    }
+
+    .share-popup {
+        width: 25rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.25rem;
+        background-color: var(--color-white);
+        position: absolute;
+        top: calc(50% - 7.8125rem);
+        left: calc(50% - 12.5rem);
+        z-index: 3;
+        padding: 0.75rem;
+        flex-wrap: wrap;
+        cursor: default;
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    .share-popup > img {
+        height: 0.8125rem;
+        cursor: pointer;
+        margin-left: calc(100% - 0.75rem);
+    }
+    .share-popup p {
+        margin: 1rem;
+    }
+    .share-popup .collaboration-text {
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: var(--color-gray);
+        margin-inline: 1rem;
+    }
+    .share-popup .share-this-link-text {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .share-popup .encryption-message-text {
+        margin-top: 0;
+        font-size: 0.8125rem;
+    }
+
+    .copy-link-container {
+        margin: 1rem;
+    }
+    .copy-link-container input {
+        height: 2rem;
+        background-color: var(--color-white);
+        border: 1px solid var(--border-color);
+        border-bottom-left-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+        outline: none;
+        width: calc(25rem / 2);
+        padding-inline: 0.75rem;
+    }
+    .copy-link-button-container {
+        background-color: #4262ff;
+        height: 2rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        cursor: pointer;
+    }
+    .copy-link-button {
+        color: var(--color-white);
+        font-size: 0.75rem;
+        margin-inline: 0.625rem;
+    }
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #000 transparent transparent transparent;
+    }
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+}
